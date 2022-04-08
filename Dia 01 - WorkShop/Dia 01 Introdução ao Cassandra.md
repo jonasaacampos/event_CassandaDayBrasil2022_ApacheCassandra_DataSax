@@ -1,42 +1,53 @@
+
+<img  src="https://upload.wikimedia.org/wikipedia/commons/5/5e/Cassandra_logo.svg"  width=250 align=right>
+
 # Cassandra Day Brasil 2022
 
 ## Introdução ao Cassandra
 
-<aside>
-👨🏾‍💻 **Cassandra Day Brasil 2022 - Sessão Workshops - Primeiro Dia**
+
+👨🏾‍💻**Cassandra Day Brasil 2022 - Sessão Workshops - Primeiro Dia**
  (Tiago Alves & Stefano Lottini, DataStax)
 
-</aside>
-
-## ToC (Índice de navegação do conteúdo)
-
-[Apache Cassandra](#apache-cassandra)
-[Principais Características do Cassandra](#principais-características-do-cassandra)
-    [Performance de Leitura e Escrita](#performance-de-leitura-e-escrita)
-    [Escalabilidade Linear](#escalabilidade-linear)
-    [Alta Disponibilidade](#alta-disponibilidade)
-    [Auto-recuperação e Automação](#auto-recuperação-e-automação)
-    [Distribuição Geográfica](#distribuição-geográfica)
-    [Agnóstico à plataforma](#agnóstico-à-plataforma)
+<details>
+	<summary>
+	<h2>ToC (Índice de navegação do conteúdo)</h2>
+		<p>
+			<i>clique para expadir o índice</i>
+		</p>
+	</summary>
+	
+[Apache Cassandra](#apache-cassandra)<br>
+[Principais Características do Cassandra](#principais-características-do-cassandra)<br>
+    [Performance de Leitura e Escrita](#performance-de-leitura-e-escrita)<br>
+    [Escalabilidade Linear](#escalabilidade-linear)<br>
+    [Alta Disponibilidade](#alta-disponibilidade)<br>
+    [Auto-recuperação e Automação](#auto-recuperação-e-automação)<br>
+    [Distribuição Geográfica](#distribuição-geográfica)<br>
+    [Agnóstico à plataforma](#agnóstico-à-plataforma)<br>
     [Independe do Fornecedor (software livre)](#independe-do-fornecedor-software-livre)
-[Hands on](#hands-on)
-    [1. Criar database no DataSax](#1-criar-database-no-datasax)
-    [2. Criar Tabelas](#2-criar-tabelas)
-        [2.1 - Criar tabela de usuários](#21---criar-tabela-de-usuários)
-        [2. 2 - Criar Tabela de Posts](#2-2---criar-tabela-de-posts)
-    [3. Execute CRUD operations](#3-execute-crud-operations)
-        [3.1 CRUD - Create data](#31-crud---create-data)
-            [3.1.1 - (C)RUD = create = inserindo dados na tabela users](#311---crud--create--inserindo-dados-na-tabela-users)
-            [3.1.2 - (C)RUD = create = inserindo dados na tabela posts_by_user](#312---crud--create--inserindo-dados-na-tabela-posts_by_user)
-            [3.1.3 - (C)RUD = create (inserindo dados na tabela posts_by_room)](#313---crud--create-inserindo-dados-na-tabela-posts_by_room)
-        [3.2 C(R)UD = read (Consultando os dados)](#32-crud--read-consultando-os-dados)
-        [3.3 CR(U)D = update (modificando os dados)](#33-crud--update-modificando-os-dados)
-        [3.4 CRU(D) = delete = remove data](#34-crud--delete--remove-data)
+    
+[Hands on](#hands-on)<br>
+    [1. Criar database no DataSax](#1-criar-database-no-datasax)<br>
+    [2. Criar Tabelas](#2-criar-tabelas)<br>
+        [2.1 - Criar tabela de usuários](#21---criar-tabela-de-usuários)<br>
+        [2. 2 - Criar Tabela de Posts](#2-2---criar-tabela-de-posts)<br>
+    [3. Execute CRUD operations](#3-execute-crud-operations)<br>
+        [3.1 CRUD - Create data](#31-crud---create-data)<br>
+            [3.1.1 - (C)RUD = create = inserindo dados na tabela users](#311---crud--create--inserindo-dados-na-tabela-users)<br>
+            [3.1.2 - (C)RUD = create = inserindo dados na tabela posts_by_user](#312---crud--create--inserindo-dados-na-tabela-posts_by_user)<br>
+            [3.1.3 - (C)RUD = create (inserindo dados na tabela posts_by_room)](#313---crud--create-inserindo-dados-na-tabela-posts_by_room)<br>
+        [3.2 C(R)UD = read (Consultando os dados)](#32-crud--read-consultando-os-dados)<br>
+        [3.3 CR(U)D = update (modificando os dados)](#33-crud--update-modificando-os-dados)<br>
+        [3.4 CRU(D) = delete = remove data](#34-crud--delete--remove-data)<br>
+
+</details>
 
 
 # Apache Cassandra
 
 Sistema de Gerenciamento de Banco de Dados NoSQL Distribuído e Descentralizado
+
 
 ## Principais Características do Cassandra
 
